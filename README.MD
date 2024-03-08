@@ -1,10 +1,10 @@
 ### Project QueryConsumer com Angular
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*bMgQ8MhbnQexpqHgIgBJPA.png" alt="angular" width="300" height="200">
-
-<img src="https://miro.medium.com/v2/resize:fit:512/0*ioDeujW3euLCfXew.png" alt="pg" width="300" height="200">
-
-<img src="https://percona.com/blog/wp-content/uploads/2016/05/Asynchronous-Query-Execution-1-300x274.jpg" alt="query" width="300" height="200">
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/1*bMgQ8MhbnQexpqHgIgBJPA.png" alt="Angular" width="300" height="200" />
+  <img src="https://miro.medium.com/v2/resize:fit:512/0*ioDeujW3euLCfXew.png" alt="PostgreSQL" width="300" height="200" />
+  <img src="https://percona.com/blog/wp-content/uploads/2016/05/Asynchronous-Query-Execution-1-300x274.jpg" alt="Query Execution" width="300" height="200" />
+</p>
 
 
 
