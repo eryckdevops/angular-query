@@ -1,0 +1,395 @@
+<style>
+    @page {
+        margin-left: -0.1cm;
+        margin-right: -0.1cm;
+    }
+
+    @media print {
+        * {
+            transition: none !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12 {
+            float: left !important;
+        }
+
+        .col-sm-12 {
+            width: 100% !important;
+        }
+
+        .col-sm-11 {
+            width: 91.66666667% !important;
+        }
+
+        .col-sm-10 {
+            width: 83.33333333% !important;
+        }
+
+        .col-sm-9 {
+            width: 75% !important;
+        }
+
+        .col-sm-8 {
+            width: 66.66666667% !important;
+        }
+
+        .col-sm-7 {
+            width: 58.33333333% !important;
+        }
+
+        .col-sm-6 {
+            width: 50% !important;
+        }
+
+        .col-sm-5 {
+            width: 41.66666667% !important;
+        }
+
+        .col-sm-4 {
+            width: 33.33333333% !important;
+        }
+
+        .col-sm-3 {
+            width: 25% !important;
+        }
+
+        .col-sm-2 {
+            width: 16.66666667% !important;
+        }
+
+        .col-sm-1 {
+            width: 8.33333333% !important;
+        }
+    }
+
+    .rm-m {
+        margin: 0;
+    }
+
+    .rm-p {
+        padding: 0;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .logo-layout-customizado {
+        float: left;
+        width: 200px;
+        margin-right: 30px;
+    }
+
+    .logo-layout-customizado img {
+        max-width: 100%;
+    }
+
+    .info-filial-layout-customizado {
+        float: left;
+        width: calc(100% - 400px);
+        min-width: 330px;
+    }
+
+    .info-pedido-layout-customizado {
+        float: left;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 180px;
+    }
+
+    .info-pedido-layout-customizado .title {
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .info-pedido-layout-customizado .content {
+        padding: 10px;
+    }
+
+    .detalhes-pedido-layout-customizado {
+        margin-top: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .detalhes-pedido-layout-customizado td {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .detalhes-pedido-layout-customizado>div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .detalhes-pedido-layout-customizado .info-cliente-layout-customizado {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .detalhes-pedido-layout-customizado .campos-personalizados-layout-customizado {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .detalhes-pedido-layout-customizado .info-totais-layout-customizado {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .detalhes-produtos-layout-customizado {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .detalhes-produtos-layout-customizado table {
+        min-width: 100%;
+    }
+
+    .detalhes-produtos-layout-customizado th {
+        background-color: #dad5d5;
+        color: #000;
+    }
+
+    .detalhes-produtos-layout-customizado tr:nth-child(even) {
+        background-color: #F5F5F5;
+    }
+
+    .detalhes-produtos-layout-customizado td,
+    .detalhes-produtos-layout-customizado th {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .detalhes-assinatura-layout-customizado {
+        margin-top: 40px;
+    }
+
+    .detalhes-assinatura-layout-customizado .assinatura-layout-customizado {
+        max-width: 300px;
+        width: 300px;
+        font-size: 12px;
+        border-top: 1px solid black;
+        padding-top: 5px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .imagem-produto-layout-customizado {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .imagem-produto-layout-customizado img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 140px;
+    }
+
+
+    .cabecalho {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .titulo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    span {
+        color: #8d7e7e;
+        font-size: 12px;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0;
+        border-top: 1px solid #bbbaba;
+    }
+
+    .linha-pontilhada {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px dotted lightgray;
+    }
+
+    .tabela-produto {
+        border-collapse: collapse;
+        border: 1px solid #d3cece;
+    }
+
+    .tabela-produto tr {
+        border-collapse: collapse;
+        border: 1px solid #d3cece;
+    }
+
+    .tabela-produto td {
+        border-collapse: collapse;
+        border: 1px solid #d3cece;
+    }
+</style>
+<div class="col-xs-12" style="padding-left: 30px; padding-right: 30px; padding-bottom: 10px; padding-top: 10px;">
+    <div class="cabecalho">
+        <div class="col-xs-4 rm-p">
+            <div class="logo-layout-customizado">
+                <img src="{{ caminhoLogo + filial.logo }}" style="width: 150px; height: auto">
+            </div>
+        </div>
+        <div class="col-xs-8 rm-p">
+            <p><b>{{ filial.nome }}</b></p>
+            <p>{{ filial.endereco }}, {{ filial.numero }}, {{ filial.bairro }}, {{ filial.cep }}</p>
+            <p>{{ filial.municipio }} - {{ filial.estado }}</p>
+        </div>
+    </div>
+    <hr>
+    <div class="col-xs-12 rm-p titulo">Dados do Pedido</div>
+        Dados do Pedido
+    </div>
+    <div class="col-xs-12 rm-p">
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 33%;">
+                    <span>
+                    {{ pedido.status_orcamento == "4" && pedido.codigo_importacao != "Em processamento"  ? 'Número do Pedido'
+                         : 'Número do Orçamento'
+                    
+                        }}
+                        </span><br/>
+
+                         {{ pedido.status_orcamento == "4" && pedido.codigo_importacao != "Em processamento"  ? pedido.codigo_importacao
+                            :  pedido.codigo
+                       
+                           }} 
+                  
+                </td>
+                <td style="width: 33%;">
+                    <span>Data Emissão</span><br />
+                    {{ pedido.data_emissao | date:"dd/MM/yyyy" }}
+
+                </td>
+                <td style="width: 33%;">
+                    <span>Vendedor</span><br />
+                    {{ pedido.vendedor || "--" }}
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-xs-12 rm-p linha-pontilhada"></div>
+    <div class="col-xs-12 rm-p">
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 66%;">
+                    <span>Cliente</span><br>
+                    {{ pedido.cliente.razao_social || "--" }}
+                </td>
+                <td style="width: 33%;">
+                    <span>CPF/CNPJ</span><br>
+                    {{ pedido.cliente.cnpj ? (pedido.cliente.cnpj | cnpj) : "--" }}
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 100%;">
+                    <span>Observação</span><br>
+                    {{ pedido.observacao_comercial || "--" }}
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%;">
+                    <span>Ordem de Compra</span><br>
+                    {{ pedido.ordem_compra || "--" }}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-xs-12 rm-p linha-pontilhada"></div>
+    <div class="col-xs-12 rm-p titulo">Produtos</div>
+    <div class="col-xs-12 rm-m rm-p detalhes-produtos-layout-customizado">
+        <div class="col-xs-12 rm-p">
+            <table class="tabela-produto">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Produto</th>
+                        <th>Peso Bruto (Kg)</th> 
+                        <th>NCM</th>
+                        <th>Qtd</th>
+                        <th>Preço Venda (R$)</th>
+                        <th>IPI (R$)</th>
+                        <th>ST (R$)</th>
+                        <th>Valor Total (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="produto in pedido_itens">
+                        <td>{{ produto.produto_codigo }}</td>
+                        <td>{{ produto.descricao }}</td>
+                        <td class="text-right">{{ produto.peso_bruto | number:2 }}</td> 
+                        <td class="text-right">{{ produto.quantidade_un_1 | number: produto.quantidade_casas_decimais }}</td>
+                        <td class="text-right">{{ produto.valor_unitario_venda | currency: 'R$ ' }}</td>
+                        <td class="text-right">{{ produto.valor_total_ipi | currency: 'R$ ' }}</td> 
+                        <td class="text-right">{{ produto.valor_total_st | currency: 'R$ ' }}</td> 
+                        <td class="text-right">{{ produto.valor_total_com_impostos | currency: 'R$ ' }}</td> 
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+</div>
+<div class="col-xs-12 rm-p">
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 33%;">
+                <p class="titulo">Pagamento</p>
+                {{ pedido.condicao_pagamento || "--" }}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="col-xs-12 rm-p linha-pontilhada" style="margin-top: 15px;"></div>
+<div class="col-xs-12 rm-p">
+    <table style="width: 100%;">
+        <tr>
+            <td class="text-right">
+                <h4>Total {{ pedido.valor_total_com_impostos | currencyFilter: "R$ ":",":".":2}}</h4>
+            </td>
+        </tr>
+    </table>
+</div>
+<<div class="col-xs-12 rm-p" style="margin-top: 50px;">
+    <table style="width: 100%;">
+        <tr ng-if="config.exibe_validade_orcamento == 1">
+            <td  class="text-center" style="width: 100%; color: rgb(7, 28, 145)">
+                 ESTE DOCUMENTO TEM VALIDADE DE {{config.validade_orcamento}} DIA(S) A PARTIR DA DATA DE EMISSÃO.       
+            </td>
+        </tr>
+        <tr>  
+            <td class="text-center" style="width: 100%;">
+                NÃO É DOCUMENTO FISCAL – NÃO É VÁLIDO COMO RECIBO E COMO GARANTIA DE MERCADORIA - NÃO COMPROVA PAGAMENTO
+            </td>
+        </tr>
+        
+    </table>
+</div>
+
+</div>
